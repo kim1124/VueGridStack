@@ -16,7 +16,7 @@
                 위젯 전체 삭제
             </button>
         </div>
-        <vue-grid-layout
+        <vue-grid-stack
             ref="layout"
             :widgets="widgets"
             @init-widgets="onInitWidgets"
@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import VueGridLayout from './components/VueGridLayout'
+// import VueGridLayout from './components/VueGridLayout'
 
 export default {
     name: 'app',
@@ -37,8 +37,9 @@ export default {
         }
     },
     components: {
-        VueGridLayout
+        // VueGridLayout
     },
+    mounted() {},
     methods: {
         onInitWidgets() {
             console.log('위젯이 초기화 됨')
@@ -48,8 +49,6 @@ export default {
         },
         onRemovedWidget(widgetId) {
             this.widgets = this.widgets.filter(widget => widget.i !== widgetId)
-
-            console.warn('선택된 위젯 제거됨 > ', widgetId)
         },
         onClickAddWidget() {
             // 위젯 아이디 생성

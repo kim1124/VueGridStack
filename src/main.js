@@ -4,7 +4,11 @@ import App from './App.vue'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 
-import './libs/gridstack'
+// 플러그인 테스트
+import VueGridStack from './libs/VueGridStack'
+
+// 플러그인 등록
+Vue.use(VueGridStack)
 
 Vue.config.productionTip = false
 

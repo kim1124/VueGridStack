@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --name vue_grid_stack",
     "lint": "vue-cli-service lint",
     "fix": "vue-cli-service lint --fix"
   },

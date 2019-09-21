@@ -73,13 +73,10 @@ export default {
         }
     },
     watch: {},
-    created() {
-        console.warn('그리드 레이아웃 생산됨')
-    },
+    created() {},
     mounted() {
         // 레이아웃을 GridStack 객체로 생성
         createLayout(this.getLayoutEl)
-        console.warn('그리드 레이아웃 마운트')
     },
     beforeDestroy() {},
     methods: {
@@ -110,7 +107,7 @@ export default {
                 newWidget.y,
                 newWidget.w,
                 newWidget.h,
-                false
+                true
             )
 
             // 위젯 추가됨 알림

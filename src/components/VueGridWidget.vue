@@ -105,7 +105,8 @@ export default {
          * 설명: 대상 위젯을 잠근다. 잠근 상태에서는 이동할 수 없다.
          */
         onClickLockWidget() {
-            this.$emit('locked', this.i, !this.lockFlag)
+            this.lockFlag = !this.lockFlag
+            this.$emit('locked', this.i, this.lockFlag)
         },
         /**
          * 이름: onClickRemoveWidget
