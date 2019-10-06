@@ -33,7 +33,7 @@ import {
     removeWidget,
     lockedWidget,
     createLayout
-} from '../libs/gridstack/gridstack.util'
+} from '../libs/layout/gridstack.util'
 
 // 위젯 정보
 import VueGridWidget from './VueGridWidget'
