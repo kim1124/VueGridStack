@@ -1,29 +1,18 @@
 # vue-grid-stack
 
-## Project setup
+JQuery 플러그인 GridStack을 VueJS에서 사용할 수 있도록 VueJS로 커스터 마이징한 프로젝트
+
+## 프로젝트 설치
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 개발모드 동작
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
+### 문법 검사
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
